@@ -17,4 +17,4 @@ Permite:
 1. Clonar el repositorio.
 2. Ejecutar en consola:
    ```bash
-   node healps.js
+   node heaps.js
