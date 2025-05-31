@@ -123,8 +123,7 @@ const heap = new MinHeap(50); // tamaño máximo arbitrario
     insertRandomNumbersToHeap(heap, 20); // inserta 20 números aleatorios
 
     //ACTIVIDAD
-    
-
+  
     class Task { // Aquí se ejecutra la logica para insertar tareas con un nombre y una prioridad.
     constructor(name, priority) {
         this.name = name;
@@ -277,5 +276,3 @@ function demo() {
         console.log("Extraída:", minTask.toString()); // Muestra la tarea extraída
     }
     // Al finalizar, el heap estará vacío
-
-}
