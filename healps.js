@@ -123,8 +123,8 @@ const heap = new MinHeap(50); // tamaño máximo arbitrario
     insertRandomNumbersToHeap(heap, 20); // inserta 20 números aleatorios
 
     //ACTIVIDAD
-    //Insertar tareas con un nombre y una prioridad.
+    
 
-    class Task // Aquí se implementará la clase MinHeap más adelante
+    class Task // Aquí se ejecutra la logicac para insertar tareas con un nombre y una prioridad.
 
-    class TaskMinHeap //Aquí se ejecutará la lógica para insertar, extraer e imprimir tareas
+    class TaskMinHeap //Aquí se ejecutará la lógica para extraer la tarea mas prioritaria e imprimir el estado actual del heap
