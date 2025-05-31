@@ -245,3 +245,37 @@ const heap = new MinHeap(50); // tamaño máximo arbitrario
         console.log(this.heap.slice(0, this.size).map(t => t.toString()));
     }
 }
+
+//prueba de uso
+
+function demo() {
+    // Crea un nuevo Min-Heap con capacidad para 10 tareas
+    const taskHeap = new TaskMinHeap(10);
+
+    // Crea un array de tareas de ejemplo con diferentes prioridades
+    const tasks = [
+        new Task("Hacer informe", 3),
+        new Task("Enviar correo", 1),
+        new Task("Estudiar para el examen", 4),
+        new Task("Llamar al profesor", 2),
+        new Task("Revisar GitHub", 5),
+    ];
+
+    // Itera sobre cada tarea en el array 'tasks'
+    tasks.forEach(task => {
+        console.log("Insertando:", task.toString());  // Muestra en consola qué tarea se está insertando
+        taskHeap.insert(task);   // Inserta la tarea en el Min-Heap
+    });
+
+    taskHeap.printHeapPretty();    // Muestra el heap en formato de árbol jerárquico
+    taskHeap.printHeapArray();    // Muestra el heap como array ordenado (para ver la estructura interna)
+
+    console.log("\n--- Extrayendo tareas por prioridad ---");
+    // Extrae todas las tareas del heap, una por una, en orden de prioridad
+    while (taskHeap.size > 0) {
+        const minTask = taskHeap.extractMin();        // Extrae la tarea con mayor prioridad (menor valor numérico)
+        console.log("Extraída:", minTask.toString()); // Muestra la tarea extraída
+    }
+    // Al finalizar, el heap estará vacío
+
+}
