@@ -125,6 +125,14 @@ const heap = new MinHeap(50); // tamaño máximo arbitrario
     //ACTIVIDAD
     
 
-    class Task // Aquí se ejecutra la logicac para insertar tareas con un nombre y una prioridad.
+    class Task { // Aquí se ejecutra la logica para insertar tareas con un nombre y una prioridad.
+    constructor(name, priority) {
+        this.name = name;
+        this.priority = priority;
+    }
 
+    toString() {
+        return `${this.name} (Prioridad: ${this.priority})`;
+    }
+}
     class TaskMinHeap //Aquí se ejecutará la lógica para extraer la tarea mas prioritaria e imprimir el estado actual del heap
